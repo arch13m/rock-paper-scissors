@@ -26,7 +26,7 @@
         <button class="gameButton">Play Game</button>
     </div>
     <div class="result">
-        <div class="prevResult"
+        <div class="prevResult"></div>
     </div>
 </body>
 <script>
@@ -130,19 +130,15 @@
             }
         }
     }
-    // console.log("Your score: " + humanScore);
     function gameOver() {
         const winner = document.createElement("p");
         if (humanScore > computerScore) {
-            // console.log("You win!")
             winner.textContent = "You win!";
         } 
         else {
-            // console.log("You lose :(")
             winner.textContent = "You lose :(";
         } 
         result.appendChild(winner);
     }
-    // playGame();
 </script>
 </html>
